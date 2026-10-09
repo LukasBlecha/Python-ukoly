@@ -1,6 +1,5 @@
 # *******************************************************
-# Denní pozdrav
-
+# Denní pozdra
 
 cas=float(input("Dobrý den, kolik je u tebe hodin?"))
 
