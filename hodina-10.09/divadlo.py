@@ -3,10 +3,15 @@ zakladni_cena = 500
 
 # Vstupy od uzivatele
 vek = float(input("Zadej vek navstevnika: "))
-student = input("Je student? (ano nebo ne): ")
 pocet_osob = int(input("Zadej pocet osob: "))
 
-# Urceni slevy pomoci podminek
+# Otazka na studenta se objevi jen tehdy, pokud ma navstevnik mene než 26 let
+if vek < 26:
+    student = input("Je student? (ano nebo ne): ")
+else:
+    student = "ne"  # Pokud je starsi, nemusi se ptat, automaticky neni student
+
+# Urceni slevy podle podminek
 if pocet_osob >= 4:
     nazev_slevy = "Rodinna sleva"
     procento_slevy = 0.25
