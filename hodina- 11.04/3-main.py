@@ -26,7 +26,7 @@ while mesic <= pocet_mesicu:
         aktualni_pary = b
 
     # Vizualizace: vykreslení čísla měsíce, počtu párů a emoji králíka (násobení řetězce)
-    kralici_emoji = "🐰" * aktualni_pary
+    kralici_emoji = "*" * aktualni_pary
     print(f"Měsíc {mesic:2d}: {aktualni_pary:3d} pár(ů) králíků -> {kralici_emoji}")
 
     # Zvětšování čítače měsíců, aby cyklus Neskončil v nekonečné smyčce
